@@ -1,0 +1,33 @@
+<app-navigation></app-navigation>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <h1 class="text-center">Add Employee</h1>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Patient Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Contact Number</label>
+                    <input name="phone" [(ngModel)]="phone" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Date Of Appointment</label>
+                    <input name="date" [(ngModel)]="date" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Doctor Name</label>
+                    <input name="doctorName" [(ngModel)]="doctorName" type="text" class="form-control">
+                </div>
+               
+               
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-outline-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
