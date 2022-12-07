@@ -30,7 +30,12 @@ export class AddPatientComponent {
         console.log(response)
       }
     )
-    this.route.navigate(['/view'])
+    this.name=""
+      this.phoneno=""
+      this.date=""
+      this.doctorName=""
+      this.route.navigate(['/view'])
+    
   }
 
 
