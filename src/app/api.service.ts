@@ -9,9 +9,9 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   addPatient=(data:any)=>{
-    return this.http.post("",data)
+    return this.http.post("http://localhost:8080/addpatient",data)
   }
   fetchPatient=()=>{
-    return this.http.get("")
+    return this.http.get("http://localhost:8080/viewpatient")
   }
 }

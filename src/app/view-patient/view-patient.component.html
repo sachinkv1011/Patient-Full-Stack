@@ -3,15 +3,15 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-3">
-                <h2 class=text-center>Employees</h2>
+                <h2 class=text-center>Patients</h2>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of patient">
 
                     <div class="card"  >
-                        <img src="" class="card-img-top" alt="...">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dB5ERe0v9QUXux7rr6TnHW9nNlvmZpWqqA&usqp=CAU" class="card-img-top" alt="">
                         <div class="card-body" >
                           <h5 class="card-title text-center">{{i.name}}</h5>
                           <ul class="list-group bg-secondary">
-                            <li class="list-group-item">PhoneNo:{{i.phone}}</li>
+                            <li class="list-group-item">PhoneNo:{{i.phoneno}}</li>
                             <li class="list-group-item">Date of Appointment:{{i.date}}</li>
                             <li class="list-group-item">Doctor:{{i.doctorName}}</li>
                             

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -9,16 +10,16 @@ import { ApiService } from '../api.service';
 export class AddPatientComponent {
 
   name=""
-  phone=""
+  phoneno=""
   date=""
   doctorName=""
 
-  constructor(private api:ApiService){}
+  constructor(private api:ApiService,private route:Router){}
 
   readValue=()=>{
     let data:any={
       "name":this.name,
-      "phone":this.phone,
+      "phoneno":this.phoneno,
       "date":this.date,
       "doctorName":this.doctorName
 
@@ -29,6 +30,7 @@ export class AddPatientComponent {
         console.log(response)
       }
     )
+    this.route.navigate(['/view'])
   }
 
 
