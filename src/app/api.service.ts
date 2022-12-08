@@ -14,4 +14,10 @@ export class ApiService {
   fetchPatient=()=>{
     return this.http.get("http://localhost:8080/viewpatient")
   }
+  searchPatient=(data:any)=>{
+    return this.http.post("http://localhost:8080/search",data)
+  }
+  deletePatient=(data:any)=>{
+    return this.http.post("http://localhost:8080/delete",data)
+  }
 }
