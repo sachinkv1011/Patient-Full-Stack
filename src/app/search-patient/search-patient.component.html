@@ -1,0 +1,39 @@
+<app-navigation></app-navigation>
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col-xxl-12">
+            <label for="" class="form-label">Patient Name</label>
+            <input name="name" [(ngModel)]="name" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col-xxl-12">
+            <button (click)="readValues()" class="btn btn-success">Search</button>
+        </div>
+        <div></div>
+    </div>
+    <div class="row g-3" *ngFor="let i of searchPatient">
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">PatientName</label>
+            <input type="text" class="form-control" value="{{i.name}}">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">PhoneNO</label>
+            <input type="text" class="form-control" value="{{i.phoneno}}">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Date of appointment</label>
+            <input type="text" class="form-control" value="{{i.date}}">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
+            <label for="" class="form-label">Doctor Name</label>
+            <input type="text" class="form-control" value="{{i.doctorName}}">
+        </div>
+       
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
+            <button (click)="deleteBtnClick(i.id)" class="btn btn-outline-danger">Delete</button>
+        </div>
+
+        
+
+        
+    </div>
+</div>
